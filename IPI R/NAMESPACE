@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("grDevices", "dev.off")
+importFrom("stats", "aggregate")
+importFrom("utils", "fix", "read.table", "write.table")
