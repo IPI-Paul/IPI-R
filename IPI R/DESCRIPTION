@@ -1,0 +1,10 @@
+Package: IPI
+Type: Package
+Title: Environment Clean Up, SQL Server Imports, Summing and Date Functions 
+Version: 0.1.0
+Author: Paul I Ighofose
+Maintainer: <paul@ipi-international.co.uk>
+Description: Built whilst learning R and requiring insight into further usage scenarios.
+License: GPL
+Encoding: UTF-8
+LazyData: true
