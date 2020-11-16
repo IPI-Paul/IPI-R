@@ -6,6 +6,7 @@ The attached PDF is not a true representation of what to expect when extracting 
 learn the effectiveness of R Programming libraries in comparison to Excel's Power Query, Word converters and Adobe's export to Excel functions.
 
 References:
+
 Matt Allington
 https://exceleratorbi.com.au/import-tabular-data-pdf-using-power-query/#:~:text=Select%20the%20PDF%20connector%20and%20specify%20the%20path,the%20PDF%20Connector%20in%20Power%20BI%20follows%20below
 
