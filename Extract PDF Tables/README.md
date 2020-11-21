@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=Xkew2GrXu9c
 
 For completeness I wanted to compare Python requirements and function but found that Python only uses a Java Wrapper. So I found some Java code called TrapRange and modified it a little to compare Java's requirements, function and end results against the use of R Script and VBA or Power Query and VBA. Admittedly a lot more VBA has been applied to manage the output from TrapRange as I am not as Savvy as the originators of it's code.
 
-I was impressed with the fact that it only took TrapRange 32 seconds to produce the base csv file as opposed to the 5 to 10 minutes Word takes to convert and then save the PDF as an MHTML file and the 5 to 10 minutes Tabulizer running through the R Script also takes. I found that I got better results by getting TrapRange to save the csv as Tab Delimited before opening with VBA to cleanse and on saving as a CSV file again commas where lost.
+I was impressed with the fact that it only took TrapRange 32 seconds to produce the base csv file as opposed to the 5 to 10 minutes Word takes to convert and then save the PDF as an MHTML file and the 5 to 10 minutes Tabulizer running through the R Script also takes. I found that I got better results by getting TrapRange to save the csv as Tab Delimited before opening with VBA to cleanse and on saving as a CSV file again commas in the Company Names column were lost.
 
 References:
 Tho
