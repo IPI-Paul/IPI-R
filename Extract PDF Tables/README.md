@@ -33,3 +33,14 @@ I was impressed with the fact that it only took TrapRange 52 seconds to produce 
 References:
 Tho
 https://github.com/thoqbk/traprange
+
+WARN Report Rendering
+  - R Script
+    - Convert PDF to csv:	5 minutes 5 seconds
+    - Total Time to Render:	6 minutes 2 seconds
+  - Microsoft Word conversion and Power Query rendering
+    - Convert PDF to mhtml:	7 minutes 59 seconds
+    - Total Time to Render:	9 minute 28 seconds
+  - TrapRange Java
+    - Convert PDF to csv:	52 seconds
+    - Total Time to Render:	1 minute 18 seconds
