@@ -9,11 +9,22 @@ When adapting my original macro functions in a new Excel macro driven file I not
   - Both Power Query and R Scripts require you to remove additional tables when they occur
   - Special Characters that occur in the data may have actually been part of the original content
 
-With the WARN dataset being 4958 records both the R Script and Word convertion process took 5 to 10 minutes. Again, as text based files do not produce the same Table structure when creating a Data Connection to them the VBA Script I wrote to use an ADODB connection and then populate a table structure takes as long as the Power Query.
+As text based files do not produce the same Table structure when creating a Data Connection to them the VBA Script I wrote to use an ADODB connection and then populate a table structure takes as long as the Power Query to refresh it's tables.
 
 However, as you will note. 
-  - Power Query returned 4957 rows of data whereas the R Script returned 4958. 
+  - Power Query was not able to identify all linefeeds correctly and some entries were concatenated without the correct spacing 
   - Creating a data connection on the Excel macro file and joining the two tabs also highlights that not all linefeeds are picked up by the MHTML convertion and Power Query
+
+WARN Report Rendering
+  - R Script
+    - Convert PDF to csv:	5 minutes 5 seconds
+    - Total Time to Render:	6 minutes 2 seconds
+  - Microsoft Word conversion and Power Query rendering
+    - Convert PDF to mhtml:	2 minutes 17 seconds
+    - Total Time to Render:	3 minutes (However, time to change Query was immense)
+  - TrapRange Java
+    - Convert PDF to csv:	52 seconds
+    - Total Time to Render:	1 minute 18 seconds
 
 References:
 
@@ -33,14 +44,3 @@ I was impressed with the fact that it only took TrapRange 52 seconds to produce 
 References:
 Tho
 https://github.com/thoqbk/traprange
-
-WARN Report Rendering
-  - R Script
-    - Convert PDF to csv:	5 minutes 5 seconds
-    - Total Time to Render:	6 minutes 2 seconds
-  - Microsoft Word conversion and Power Query rendering
-    - Convert PDF to mhtml:	7 minutes 59 seconds
-    - Total Time to Render:	9 minute 28 seconds
-  - TrapRange Java
-    - Convert PDF to csv:	52 seconds
-    - Total Time to Render:	1 minute 18 seconds
